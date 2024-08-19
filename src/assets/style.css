@@ -5,6 +5,10 @@
   font-family: "Roboto", sans-serif;
 }
 
+.modal-header-link {
+  display: none;
+}
+
 .header {
   height: 120px;
   display: flex;
@@ -356,10 +360,6 @@
 
 /* Responsive */
 @media (max-width: 1200px) {
-  .modal-header-link {
-    display: none;
-  }
-
   .landing-right img {
     height: 400px;
   }
@@ -382,10 +382,6 @@
 }
 
 @media (max-width: 992px) {
-  .modal-header-link {
-    display: none;
-  }
-
   .logo img {
     height: 70px;
   }
