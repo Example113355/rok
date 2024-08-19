@@ -21,7 +21,6 @@ const App = () => {
         <Route path="/rok/:number" element={<Detail />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/" element={<Home />} />
-        <Route path="/cod" element={<Home />} />
       </Routes>
 
       <Footer />
