@@ -7,23 +7,18 @@ import Home from './pages/home'
 import Header from './components/header'
 import Footer from './components/footer'
 import Privacy from './pages/privacy'
+import Rok from './pages/rok'
+import Detail from './pages/detail'
 import './assets/style.css'
 
-const Notes = () => (
-  <div>
-    <h2>Notes</h2>
-    <p>This is the notes page</p>
-  </div>
-)
-
 const App = () => {
-
   return (
     <Router>
       <Header />
 
       <Routes>
-        <Route path="/rok" element={<Notes />} />
+        <Route path="/rok" element={<Rok />} />
+        <Route path="/rok/:number" element={<Detail />} />
         <Route path="/privacy" element={<Privacy />} />
         <Route path="/" element={<Home />} />
         <Route path="/cod" element={<Home />} />

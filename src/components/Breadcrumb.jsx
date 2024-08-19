@@ -1,14 +1,20 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import packages from '../utils/data';
 
 const Breadcrumb = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
 
   const breadcrumbNameMap = {
+    '/rok': 'Rise of Kingdom Bot',
     '/privacy': 'Chính sách bảo mật và đền bù',
     '/': 'Home',
   };
+
+  packages.forEach((item) => {
+    breadcrumbNameMap[`/rok/${item.id}`] = item.name;
+  });
   return (
     <nav>
       <ul className="breadcrumb">

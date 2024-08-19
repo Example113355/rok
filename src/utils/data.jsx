@@ -8,6 +8,8 @@ const packages = [
         is_reduce: false,
         reduced_price: '',
         is_popular: true,
+        vip_type: '1',
+        created_date: '2024-14-08',
     },
     {
         id: 2,
@@ -18,6 +20,8 @@ const packages = [
         is_reduce: false,
         reduced_price: '',
         is_popular: false,
+        vip_type: '1',
+        created_date: '2024-13-08',
     },
     {
         id: 3,
@@ -28,6 +32,8 @@ const packages = [
         is_reduce: false,
         reduced_price: '',
         is_popular: true,
+        vip_type: '1',
+        created_date: '2024-15-08',
     },
     {
         id: 4,
@@ -38,6 +44,8 @@ const packages = [
         is_reduce: false,
         reduced_price: '',
         is_popular: true,
+        vip_type: '2',
+        created_date: '2024-16-08',
     },
     {
         id: 5,
@@ -48,6 +56,8 @@ const packages = [
         is_reduce: false,
         reduced_price: '',
         is_popular: false,
+        vip_type: '2',
+        created_date: '2024-14-08',
     },
     {
         id: 6,
@@ -58,6 +68,8 @@ const packages = [
         is_reduce: true,
         reduced_price: '510.000đ',
         is_popular: true,
+        vip_type: '2',
+        created_date: '2024-17-08',
     },
     {
         id: 7,
@@ -68,6 +80,8 @@ const packages = [
         is_reduce: false,
         reduced_price: '',
         is_popular: false,
+        vip_type: '3',
+        created_date: '2024-18-08',
     },
     {
         id: 8,
@@ -78,6 +92,8 @@ const packages = [
         is_reduce: false,
         reduced_price: '',
         is_popular: false,
+        vip_type: '3',
+        created_date: '2024-16-08',
     },
     {
         id: 9,
@@ -88,6 +104,8 @@ const packages = [
         is_reduce: false,
         reduced_price: '',
         is_popular: false,
+        vip_type: '3',
+        created_date: '2024-18-08',
     },
     {
         id: 10,
@@ -98,6 +116,8 @@ const packages = [
         is_reduce: true,
         reduced_price: '390.000đ',
         is_popular: false,
+        vip_type: '2',
+        created_date: '2024-15-08',
     },
 ]
 
