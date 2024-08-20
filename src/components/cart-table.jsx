@@ -65,7 +65,7 @@ const CartTable = ({ setTotal }) => {
             dataIndex: 'total',
             key: 'total',
             render: (text, record) => (
-                <span>{parseFloat(record.price.replace('$', '')) * record.quantity}$</span>
+                <span>{(parseFloat(record.price.replace('$', '')) * record.quantity).toFixed(2)}$</span>
             ),
         },
         {
