@@ -26,13 +26,15 @@ const Header = () => {
             <div className='header-link'>
                 <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Trang chủ</NavLink>
                 <NavLink to="/rok" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Rise Of Kingdom Bot</NavLink>
-                <NavLink to="/privacy" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Chính sách bảo mật và đền bù</NavLink>
+                <NavLink to="/cod" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Call Of Dragon Bot</NavLink>
+                <NavLink to="/cart" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Giỏ hàng</NavLink>
                 <a href="https://wbs.minarok.com/" className={`nav-link`}>Đăng nhập Bot</a>
             </div>
             <div className={`header-link modal-header-link ${menuOpen? 'open' : ''}`}>
                 <NavLink to="/" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Trang chủ</NavLink>
                 <NavLink to="/rok" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Rise Of Kingdom Bot</NavLink>
-                <NavLink to="/privacy" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Chính sách bảo mật và đền bù</NavLink>
+                <NavLink to="/cod" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Call Of Dragon Bot</NavLink>
+                <NavLink to="/cart" className={({ isActive }) => `nav-link ${isActive ? 'active-link' : ''}`}>Giỏ hàng</NavLink>
                 <a href="https://wbs.minarok.com/" className={`nav-link`}>Đăng nhập Bot</a>
             </div>
         </div>

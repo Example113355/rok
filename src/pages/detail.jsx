@@ -1,13 +1,21 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import packages from '../utils/data';
+import rok_packages from '../utils/rok_data';
+import cod_packages from '../utils/cod_data';
 import Breadcrumb from '../components/Breadcrumb';
 import Package from '../components/package';
 
-const Detail = () => {
+const Detail = (type) => {
   const { number } = useParams();
 
-  const item = packages.find((item) => item.id === parseInt(number));
+  console.log(type)
+  var item
+  if (type.type === 'rok') {
+    item = rok_packages.find((p) => p.id == number);
+  }
+  else {
+    item = cod_packages.find((p) => p.id == number);
+  }
 
   return (
     item ? (
@@ -40,9 +48,15 @@ const Detail = () => {
           <h1>Xem thêm các gói khác</h1>
           <div className="best-seller-list">
             {
-              packages.filter(p => (p.id != number)).map((p, i) => (
-                <Package key={i} {...p} />
-              ))
+              type.type == 'rok' ? (
+                rok_packages.filter(p => p.id != item.id).map((p, i) => (
+                  <Package key={i} {...p} type='rok' />
+                ))
+              ) : (
+                cod_packages.filter(p => p.id != item.id).map((p, i) => (
+                  <Package key={i} {...p} type='cod' />
+                ))
+              )
             }
           </div>
         </div>

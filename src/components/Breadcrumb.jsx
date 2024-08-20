@@ -1,19 +1,25 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import packages from '../utils/data';
+import rok_packages from '../utils/rok_data';
+import cod_packages from '../utils/cod_data';
 
 const Breadcrumb = () => {
   const location = useLocation();
   const pathnames = location.pathname.split('/').filter((x) => x);
 
   const breadcrumbNameMap = {
+    '/cart': 'Giỏ hàng',
     '/rok': 'Rise of Kingdom Bot',
-    '/privacy': 'Chính sách bảo mật và đền bù',
+    '/cod': 'Call of Dragon Bot',
     '/': 'Home',
   };
 
-  packages.forEach((item) => {
+  rok_packages.forEach((item) => {
     breadcrumbNameMap[`/rok/${item.id}`] = item.name;
+  });
+
+  cod_packages.forEach((item) => {
+    breadcrumbNameMap[`/cod/${item.id}`] = item.name;
   });
   return (
     <nav>

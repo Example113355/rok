@@ -1,8 +1,8 @@
-const packages = [
+const cod_packages = [
     {
         id: 1,
-        name: 'Rise of Kingdom Bot vip 1 (1 ngày)',
-        price: '92.000đ',
+        name: 'Call of Dragon Bot vip 1 (1 ngày)',
+        price: '3.69$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-1-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-P.png',
         is_reduce: false,
@@ -13,8 +13,8 @@ const packages = [
     },
     {
         id: 2,
-        name: 'Rise of Kingdom Bot vip 1 (7 ngày)',
-        price: '138.000đ',
+        name: 'Call of Dragon Bot vip 1 (7 ngày)',
+        price: '5.54$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-1-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-P.png',
         is_reduce: false,
@@ -25,8 +25,8 @@ const packages = [
     },
     {
         id: 3,
-        name: 'Rise of Kingdom Bot vip 1 (30 ngày)',
-        price: '330.000đ',
+        name: 'Call of Dragon Bot vip 1 (30 ngày)',
+        price: '13.24$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-1-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-P.png',
         is_reduce: false,
@@ -37,8 +37,8 @@ const packages = [
     },
     {
         id: 4,
-        name: 'Rise of Kingdom Bot farm gem vip 2 (1 ngày)',
-        price: '184.000đ',
+        name: 'Call of Dragon Bot farm gem vip 2 (1 ngày)',
+        price: '7.38$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-2-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-P.png',
         is_reduce: false,
@@ -49,8 +49,8 @@ const packages = [
     },
     {
         id: 5,
-        name: 'Rise of Kingdom Bot farm gem vip 2 (7 ngày)',
-        price: '276.000đ',
+        name: 'Call of Dragon Bot farm gem vip 2 (7 ngày)',
+        price: '11.07$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-2-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-P.png',
         is_reduce: false,
@@ -61,20 +61,20 @@ const packages = [
     },
     {
         id: 6,
-        name: 'Rise of Kingdom Bot farm gem vip 2 (30 ngày)',
-        price: '650.000đ',
+        name: 'Call of Dragon Bot farm gem vip 2 (30 ngày)',
+        price: '26.07$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-2-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-sale.png',
         is_reduce: true,
-        reduced_price: '510.000đ',
+        reduced_price: '20.46$',
         is_popular: true,
         vip_type: '2',
         created_date: '2024-17-08',
     },
     {
         id: 7,
-        name: 'Rise of Kingdom Bot farm gem vip 3 (1 ngày)',
-        price: '294.000đ',
+        name: 'Call of Dragon Bot farm gem vip 3 (1 ngày)',
+        price: '11.79$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-3-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-sale-bh.png',
         is_reduce: false,
@@ -85,8 +85,8 @@ const packages = [
     },
     {
         id: 8,
-        name: 'Rise of Kingdom Bot farm gem vip 3 (7 ngày)',
-        price: '486.000đ',
+        name: 'Call of Dragon Bot farm gem vip 3 (7 ngày)',
+        price: '19.49$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-3-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-sale-bh.png',
         is_reduce: false,
@@ -97,8 +97,8 @@ const packages = [
     },
     {
         id: 9,
-        name: 'Rise of Kingdom Bot farm gem vip 3 (30 ngày)',
-        price: '890.000đ',
+        name: 'Call of Dragon Bot farm gem vip 3 (30 ngày)',
+        price: '35.70$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-3-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-sale-bh.png',
         is_reduce: false,
@@ -109,16 +109,16 @@ const packages = [
     },
     {
         id: 10,
-        name: 'Rise of Kingdom Bot farm gem vip SLEEP 30 ngày',
-        price: '430.000đ',
+        name: 'Call of Dragon Bot farm gem vip SLEEP 30 ngày',
+        price: '17.25$',
         description_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-auto-bot-vip-2-1.png',
         thumbnail_img: 'https://kamiautobot.com/wp-content/uploads/2024/07/Kami-Auto-Bot-sale.png',
         is_reduce: true,
-        reduced_price: '390.000đ',
+        reduced_price: '15.64$',
         is_popular: false,
         vip_type: '2',
         created_date: '2024-15-08',
     },
 ]
 
-export default packages;
+export default cod_packages;

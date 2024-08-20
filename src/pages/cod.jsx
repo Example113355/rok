@@ -1,7 +1,7 @@
 import Breadcrumb from "../components/Breadcrumb"
 import Select from "react-dropdown-select"
 import React, { useState } from "react"
-import rok_packages from "../utils/rok_data"
+import rok_packages from "../utils/cod_data"
 import Package from "../components/package"
 
 const options = [
@@ -35,7 +35,7 @@ const options = [
     },
 ]
 
-const Rok = () => {
+const Cod = () => {
     let data = rok_packages
     const [selectedValues, setSelectedValues] = useState([options[0]])
     const handleChange = (values) => {
@@ -82,7 +82,7 @@ const Rok = () => {
             <div className="rok-header">
                 <Breadcrumb />
                 <h1 className="rok-heading">
-                    Rise of Kingdom Bot
+                    Call of Dragon Bot
                 </h1>
             </div>
 
@@ -101,7 +101,7 @@ const Rok = () => {
                 <div className="one-result-container">
                     <h3 className="rok-result-heading">Hiển thị kết quả duy nhất</h3>
                     <div className="one-result home-price">
-                        <Package {...data[0]} type='rok' />
+                        <Package {...data[0]} type='cod' />
                     </div>
                 </div>
 
@@ -110,7 +110,7 @@ const Rok = () => {
                     <div className="best-seller-list">
                     {
                         data.map((p, i) => (
-                            <Package key={i} {...p} type='rok' />
+                            <Package key={i} {...p} type='cod' />
                         ))
                     }
                 </div>
@@ -120,4 +120,4 @@ const Rok = () => {
     )
 }
 
-export default Rok
+export default Cod
