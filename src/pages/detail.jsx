@@ -4,17 +4,43 @@ import rok_packages from '../utils/rok_data';
 import cod_packages from '../utils/cod_data';
 import Breadcrumb from '../components/Breadcrumb';
 import Package from '../components/package';
+import { useNavigate } from 'react-router-dom';
 
 const Detail = (type) => {
   const { number } = useParams();
+  const navigate = useNavigate();
 
-  console.log(type)
   var item
   if (type.type === 'rok') {
     item = rok_packages.find((p) => p.id == number);
   }
   else {
     item = cod_packages.find((p) => p.id == number);
+  }
+
+  const handleBuy = (item) => {
+    let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+    let newItem = {
+      id: item.id,
+      name: item.name,
+      price: item.price,
+      quantity: 1,
+    };
+
+    console.log(newItem);
+
+    const itemIndex = cart.findIndex((i) => i.id === item.id);
+
+    if (itemIndex === -1) {
+      cart.push(newItem);
+    } else {
+      cart[itemIndex].quantity++;
+    }
+
+    localStorage.setItem('cart', JSON.stringify(cart));
+
+    navigate('/cart');
   }
 
   return (
@@ -42,7 +68,9 @@ const Detail = (type) => {
 
         <div className="detail-description">
           <img width={'90%'} src={item.description_img} alt="description img" />
+          <button className='detail-description-add' onClick={() => handleBuy(item)}>Add to cart</button>
         </div>
+
 
         <div className="detail-others">
           <h1>Xem thêm các gói khác</h1>

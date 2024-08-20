@@ -23,6 +23,8 @@ const Package = ({ id, name, price, thumbnail_img, is_reduce, reduced_price, typ
         }
 
         localStorage.setItem('cart', JSON.stringify(cart));
+
+        navigate('/cart');
     }
 
     const handleClick = () => {
