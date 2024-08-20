@@ -28,8 +28,6 @@ const Detail = (type) => {
       quantity: 1,
     };
 
-    console.log(newItem);
-
     const itemIndex = cart.findIndex((i) => i.id === item.id);
 
     if (itemIndex === -1) {
