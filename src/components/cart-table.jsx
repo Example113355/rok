@@ -54,9 +54,9 @@ const CartTable = ({ setTotal }) => {
             key: 'quantity',
             render: (text, record) => (
                 <Space size="small">
-                    <Button onClick={() => handleDecrease(record)}>-</Button>
+                    <Button className='quantity-button' onClick={() => handleDecrease(record)}>-</Button>
                     {text}
-                    <Button onClick={() => handleIncrease(record)}>+</Button>
+                    <Button className='quantity-button' onClick={() => handleIncrease(record)}>+</Button>
                 </Space>
             ),
         },
@@ -72,7 +72,7 @@ const CartTable = ({ setTotal }) => {
             title: 'Action',
             key: 'action',
             render: (text, record) => (
-                <Space size="middle">
+                <Space size="small">
                     <a onClick={() => handleRemove(record)}>Remove</a>
                 </Space>
             ),
@@ -86,6 +86,7 @@ const CartTable = ({ setTotal }) => {
             columns={columns}
             dataSource={data}
             pagination={false}
+            scroll={{ x: true }}
             rowKey="id"
             summary={() => {
                 let total = 0;
@@ -98,7 +99,7 @@ const CartTable = ({ setTotal }) => {
                     <>
                         {data.length > 0 && (
                             <Table.Summary.Row>
-                                <Table.Summary.Cell className="cart-sum" colSpan={4}>Tổng cộng</Table.Summary.Cell>
+                                <Table.Summary.Cell className="cart-sum" colSpan={3}>Tổng cộng</Table.Summary.Cell>
                                 <Table.Summary.Cell className="cart-sum-value">{total}$</Table.Summary.Cell>
                             </Table.Summary.Row>
                         )}

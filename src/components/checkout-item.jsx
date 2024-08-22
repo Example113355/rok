@@ -6,6 +6,7 @@ import MomoQrCode from '../assets/icon/momo_qr_code.jpg';
 import BankQrCode from '../assets/icon/bank_qr_code.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUp, faArrowDown } from '@fortawesome/free-solid-svg-icons';
+import { USD_VND } from '../utils/const';
 
 const CheckoutItem = ({ type, total }) => {
     const [showContent, setShowContent] = useState(false);
@@ -38,15 +39,22 @@ const CheckoutItem = ({ type, total }) => {
         <div className="checkout-item" onClick={toggleShowContent}>
             <div className="checkout-item-head">
                 <div className="checkout-item-head--top">
-                    <h3>{item_header}</h3>
-                    <img height={20} src={item_icon} alt="" />
-                    <div className="checkout-total">
-                        {total}$
+                    <div className="checkout-item-name">
+                        <h3>{item_header}</h3>
+                        <img height={20} src={item_icon} alt="" />
+                    </div>
+                    <div className="checkout-item-amount">
+                        <div className="checkout-total">
+                            {total}$
+                        </div>
+                        <div className="checkout-total">
+                            {Math.ceil(total * USD_VND).toLocaleString('vi-VN')}Đ
+                        </div>
                     </div>
                 </div>
                 <div className="checkout-item-head--bottom">
-                    <FontAwesomeIcon className='checkout-icon up-arrow' icon={faArrowUp} />
-                    <FontAwesomeIcon className='checkout-icon down-arrow' icon={faArrowDown} />
+                    <FontAwesomeIcon className={`checkout-icon ${showContent? 'icon-show' : 'icon-hide'}`} icon={faArrowUp} />
+                    <FontAwesomeIcon className={`checkout-icon ${!showContent? 'icon-show' : 'icon-hide'}`} icon={faArrowDown} />
                 </div>
             </div>
 
