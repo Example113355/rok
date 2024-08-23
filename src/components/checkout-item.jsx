@@ -119,7 +119,7 @@ const CheckoutItem = ({ type, total }) => {
                         </div>
                     )
                 }
-                <button className='contact-button'>Liên hệ Zalo thanh toán</button>
+                <button onClick={() => window.open('https://zalo.me/0971844044', '_blank', 'noopener,noreferrer')} className='contact-button'>Liên hệ Zalo thanh toán</button>
             </div>
         </div>
     );
