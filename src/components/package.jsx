@@ -59,7 +59,7 @@ const Package = ({ id, name, price, thumbnail_img, is_reduce, reduced_price, typ
                 </div>
             </div>
 
-            <button className='package-button' onClick={handleBuy}>Add to cart</button>
+            <button className='package-button' onClick={handleBuy}>Thanh toán</button>
         </div>
     );
 };

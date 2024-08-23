@@ -10,6 +10,7 @@ import Cod from './pages/cod'
 import Rok from './pages/rok'
 import Detail from './pages/detail'
 import Cart from './pages/cart'
+import HomeBlogController from './components/home_blog_controller'
 import './assets/style.css'
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
         <Route path="/rok" element={<Rok />} />
         <Route path="/rok/:number" element={<Detail type="rok" />} />
         <Route path="/cod/:number" element={<Detail type="cod" />} />
+        <Route path='/blog/:id' element={<HomeBlogController />} />
         <Route path="/cod" element={<Cod />} />
         <Route path="/cart" element={<Cart />} />
         <Route path="/" element={<Home />} />

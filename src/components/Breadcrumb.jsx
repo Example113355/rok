@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import rok_packages from '../utils/rok_data';
-import cod_packages from '../utils/cod_data';
+import rok_packages from '../utils/data/rok_data';
+import cod_packages from '../utils/data/cod_data';
 
 const Breadcrumb = () => {
   const location = useLocation();

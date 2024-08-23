@@ -1,7 +1,7 @@
 import Breadcrumb from "../components/Breadcrumb"
 import Select from "react-dropdown-select"
 import React, { useState } from "react"
-import rok_packages from "../utils/rok_data"
+import rok_packages from "../utils/data/rok_data"
 import Package from "../components/package"
 
 const options = [

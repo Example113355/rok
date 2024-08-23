@@ -1,10 +1,9 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
-import rok_packages from '../utils/rok_data';
-import cod_packages from '../utils/cod_data';
+import { useParams, useNavigate } from 'react-router-dom';
+import rok_packages from '../utils/data/rok_data';
+import cod_packages from '../utils/data/cod_data';
 import Breadcrumb from '../components/Breadcrumb';
 import Package from '../components/package';
-import { useNavigate } from 'react-router-dom';
 
 const Detail = (type) => {
   const { number } = useParams();

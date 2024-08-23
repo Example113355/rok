@@ -1,39 +1,27 @@
-import Landing from "../components/landing"
-import Package from "../components/package"
-import rok_packages from "../utils/rok_data"
+import home_data from "../utils/data/home_page_data"
+import HomeItem from "../components/home-item"
 
 const Home = () => (
-    <>
-        <Landing />
+    <div className="home">
+        <h1 className="package-name">ROKBOT INFINITY</h1>
+        <p className="package-description">
+            Rise of Kingdom Bot - Rise of Kingdom Service - Rok bot mobile - Auto farm phone - Auto on mobile device - Auto farm gem safe 99% - Fam marauder pre KvK, Barbarian KvK - Farm Gem 24/7- Farm RSS 24/7 - Auto captcha - Support multi-instance: Bluestacks, MEmu, Mumu, LDPlayer - Free trial
+        </p>
 
-        <div className="package-header">
-            <h2>Các gói hiện có</h2>
+        <div className="best-seller-list">
+            {
+                home_data.map((item) => (
+                    <HomeItem
+                        key={item.id}
+                        name={item.name}
+                        thumbnail_img={item.thumbnail_img}
+                        description={item.description}
+                        link={item.link}
+                    />
+                ))
+            }
         </div>
-
-        <div className="home-packages">
-            <div className="package-best-seller">
-                <h2 className="best-seller-header">Được mua nhiều nhất</h2>
-                <div className="best-seller-list home-price">
-                    {
-                        rok_packages.filter(p => p.is_popular).map((p, i) => (
-                            <Package key={i} {...p} type='rok' />
-                        ))
-                    }
-                </div>
-            </div>
-
-            <div className="package-best-seller">
-                <h2 className="best-seller-header">Các gói khác</h2>
-                <div className="best-seller-list">
-                    {
-                        rok_packages.filter(p => !p.is_popular).map((p, i) => (
-                            <Package key={i} {...p} type='rok' />
-                        ))
-                    }
-                </div>
-            </div>
-        </div>
-    </>
+    </div>
 )
 
 export default Home
