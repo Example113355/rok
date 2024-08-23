@@ -50,7 +50,7 @@ const Blog1 = () => {
 
                 <ul>
                     <li>Via email: abc@gmail.com</li>
-                    <li>Via Zalo: <a href="https://chat.zalo.me">zalo.com/abc</a></li>
+                    <li>Via Zalo: <a href="https://zalo.me/0971844044">https://zalo.me/0971844044</a></li>
                 </ul>
             </div>
         </div>
