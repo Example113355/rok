@@ -11,6 +11,7 @@ import Rok from './pages/rok'
 import Detail from './pages/detail'
 import Cart from './pages/cart'
 import HomeBlogController from './components/home_blog_controller'
+import FloatingButton from './components/floatingButton'
 import './assets/style.css'
 
 const App = () => {
@@ -29,6 +30,7 @@ const App = () => {
       </Routes>
 
       <Footer />
+      <FloatingButton />
     </Router>
   )
 }

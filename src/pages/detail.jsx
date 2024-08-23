@@ -65,7 +65,7 @@ const Detail = (type) => {
 
         <div className="detail-description">
           <img width={'90%'} src={item.description_img} alt="description img" />
-          <button className='detail-description-add' onClick={() => handleBuy(item)}>Add to cart</button>
+          <button className='detail-description-add' onClick={() => handleBuy(item)}>Thanh toán</button>
         </div>
 
 

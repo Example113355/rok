@@ -5,6 +5,27 @@
   font-family: "Roboto", sans-serif;
 }
 
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.floating-button:hover img {
+  opacity: 0.6;
+}
+
+.floating-button img {
+  width: 40px;
+}
+
 .modal-header-link {
   display: none;
 }
