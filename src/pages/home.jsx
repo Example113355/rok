@@ -5,7 +5,7 @@ const Home = () => (
     <div className="home">
         <h1 className="package-name">ROKBOT INFINITY</h1>
         <p className="package-description">
-            Rise of Kingdom Bot - Rise of Kingdom Service - Rok bot mobile - Auto farm phone - Auto on mobile device - Auto farm gem safe 99% - Fam marauder pre KvK, Barbarian KvK - Farm Gem 24/7- Farm RSS 24/7 - Auto captcha - Support multi-instance: Bluestacks, MEmu, Mumu, LDPlayer - Free trial
+            Rise Of Kingdom Bot - Rise of Kingdom Service - Rok bot mobile - Auto farm phone - Auto on mobile device - Auto farm gem safe 99% - Fam marauder pre KvK, Barbarian KvK - Farm Gem 24/7- Farm RSS 24/7 - Auto captcha - Support multi-instance: Bluestacks, MEmu, Mumu, LDPlayer - Free trial
         </p>
 
         <div className="best-seller-list">
