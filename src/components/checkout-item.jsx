@@ -98,15 +98,20 @@ const CheckoutItem = ({ type, total }) => {
                         <div className="checkout-item-content">
                             <div className="content-item">
                                 <span className='content-item-left'>Ngân hàng: </span>
-                                <span className='content-item-right'>VietcomBank</span>
+                                <span className='content-item-right'>ShinhanBank</span>
                             </div>
                             <div className="content-item">
                                 <span className='content-item-left'>Số TK: </span>
-                                <span className='content-item-right'>0071 000 832 768</span>
+                                <span className='content-item-right'>700030660523</span>
                             </div>
                             <div className="content-item">
                                 <span className='content-item-left'>Người nhận: </span>
-                                <span className='content-item-right'>Nguyễn Văn A</span>
+                                <span className='content-item-right'>PHẠM HOÀNG ANH</span>
+                            </div>
+                            <div className="content-item">
+                                <span className='content-item-left'>Lưu ý: </span>
+                                <span className='content-item-right'>KHÔNG GHI LÝ DO MUA BÁN</span>
+                                <span className='content-item-right'>Để mặc định của Ngân hàng ( ghi tên Zalo hoặc bỏ trống )</span>
                             </div>
                             <div className="content-item">
                                 <span className='content-item-left'>Số tiền: </span>
